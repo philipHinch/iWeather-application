@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* MAIN */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  letter-spacing: 1px;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+main.container {
+  width: 375px;
+  height: 712px;
+  border: 6px solid #222;
+  border-radius: 25px;
+  padding: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url(img/main.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  animation: littleMoving 35s linear infinite;
+  user-select: none;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 60px;
+}
+
+/* FORM & INPUT */
+
+form {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  width: 100%;
+  margin-right: 5px;
+  font-size: 1.5rem;
+  padding: 9px;
+  border-radius: 10px;
+  border: 2px solid #f4f4f4;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+form input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+form button {
+  width: 175px;
+  padding: 12px 20px 12px 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  position: relative;
+}
+
+form button i {
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form button:hover i {
+  margin-left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+form button:focus {
+  outline: none;
+}
+
+/* IMAGE & ICON CONTAINERS */
+
+.image-container {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.icon-container {
+  position: absolute;
+  border: 2px solid #222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-container img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.icon-container img.animated {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* WEATHER INFO */
+
+.weather-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-info .location-text {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.weather-info .temperature {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.weather-info .forecast {
+  font-size: 1.5rem;
+  margin: 10px;
+  font-weight: 400;
+}
+
+/* HIDDEN */
+
+.hidden {
+  display: none;
+}
+
+.hidden,
+main.container {
+  justify-content: center;
+}
+
+/* KEYFRAMES */
+@-webkit-keyframes moving {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@-webkit-keyframes littleMoving {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 17% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
