@@ -1,6 +1,4 @@
 # iWeather- Weather application
 Weather application with data retrieved from api.
 
-<video width="320" height="240" controls>
-  <source src="video/iWeather.mkv" type="video/mkv">
-</video>
+Preview => https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=9s&ab_channel=neo90sr
