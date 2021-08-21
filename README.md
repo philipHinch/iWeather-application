@@ -1,4 +1,6 @@
-# iWeather- Weather application
-Weather application with data retrieved from api.
+# iWeather
 
-Preview => https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=9s&ab_channel=neo90sr
+This is a modern weather application with data retrieved from an api (https://www.accuweather.com/).
+
+You can see the real-time weather forecast for any city in the world.
+
