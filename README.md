@@ -14,9 +14,9 @@ I fetched the data from the api with an async function
 
 [View iWeather](https://www.youtube.com/watch?v=9XA7sQKpL2Y&ab_channel=neo90sr)
 
-![GitHub Logo](/images/preview.png)
-![GitHub Logo](/images/preview2.png)
-![GitHub Logo](/images/preview3.png)
+![Preview 1](/img/preview.png)
+![Preview 2](/img/preview2.png)
+![Preview 3](/img/preview3.png)
 
 [View iWeather](https://www.youtube.com/watch?v=9XA7sQKpL2Y&ab_channel=neo90sr)
 
